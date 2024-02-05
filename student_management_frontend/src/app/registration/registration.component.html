@@ -1,0 +1,116 @@
+<section class="vh-100" style="background-color: #f7a200;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-12">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+                <div class="card-body p-4 p-lg-5 text-black" >
+                  <!-- <form> -->
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Enter your personal details here .</h5>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>First name</mat-label>
+                                    <mat-icon matPrefix>person</mat-icon>
+                                    <input matInput [formControl]="$any(userForm.get('firstname')) ? $any(userForm.get('firstname')) : null"  type="text" [(ngModel)]="firstname" placeholder="First name" name="first_name">
+
+                                    <mat-error *ngIf="userForm.get('firstname')?.hasError('required') && userForm.get('firstname')?.touched ">
+                                        First name is required
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>Last name</mat-label>
+                                    <mat-icon matPrefix>person</mat-icon>
+                                    <input matInput type="text" [formControl]="$any(userForm.get('lastname')) ? $any(userForm.get('lastname')) : null" [(ngModel)]="lastname" placeholder="Last name" name="last_name">
+
+                                    <mat-error *ngIf="userForm.get('lastname')?.hasError('required') && userForm.get('lastname')?.touched ">
+                                        Last name is required
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>Email</mat-label>
+                                    <mat-icon matPrefix>email</mat-icon>
+                                    <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required matInput type="text" [formControl]="$any(userForm.get('email')) ? $any(userForm.get('email')) : null"  [(ngModel)]="email" placeholder="Email" name="email">
+
+                                    <mat-error *ngIf="userForm.get('email')?.hasError('required') && userForm.get('email')?.touched ">
+                                        Email is required
+                                    </mat-error>
+                                    <mat-error *ngIf="userForm.get('email')?.errors?.['pattern']">
+                                        Enter valid email
+                                    </mat-error> 
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>Mobile</mat-label>
+                                    <mat-icon matPrefix>local_phone</mat-icon>
+                                    <input pattern="[-\d\(\)\+\ \/\_\{\}]{10,25}$"  [formControl]="$any(userForm.get('mobile')) ? $any(userForm.get('mobile')) : null" matInput type="number" [(ngModel)]="mobile" placeholder="Mobile" name = "mobile">
+
+                                    <mat-error *ngIf="userForm.get('mobile')?.hasError('required') && userForm.get('mobile')?.touched ">
+                                        contact number is required
+                                    </mat-error>
+                                   
+                                    <mat-error *ngIf="!userForm.get('mobile')?.hasError('required') && userForm.get('mobile')?.hasError('invalidMobileNumber') && userForm.get('mobile')?.touched">
+                                        enter valid contact number
+                                    </mat-error> 
+                                </mat-form-field>
+                            </div>  
+                            <div class="form-outline mb-4 col-md-4 col-sm-12 col-lg-4 mt-2">
+                                <mat-form-field  appearance="outline" style="width: 100%;">
+                                    <mat-label>Select Role </mat-label>
+                                    <mat-select matNativeControl id="mySelectId">
+                                      <mat-option value="" disabled selected></mat-option>
+                                      <mat-option value="student" *ngFor = "let role of lstRole" (click) = "ChangeRole(role)">{{role['vchr_name']}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-outline mb-4 col-md-4 col-sm-12 col-lg-4 mt-2">
+                                <mat-form-field  appearance="outline" style="width: 100%;">
+                                    <mat-label>Select Nationality </mat-label>
+                                    <mat-select matNativeControl id="mySelectcountryId">
+                                      <mat-option value="" disabled selected></mat-option>
+                                      <mat-option value="india" *ngFor = 'let country of lstCountry' (click) = "ChangeCountry(country)">{{country['vchr_name']}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>Password</mat-label>
+                                    <mat-icon matPrefix>password</mat-icon>
+                                    <input matInput pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required matInput type="text" [formControl]="$any(userForm.get('password')) ? $any(userForm.get('password')) : null" type="text" [(ngModel)]="password" placeholder="Password" name="password">
+
+                                    <mat-error *ngIf="userForm.get('password')?.hasError('required') && userForm.get('password')?.touched ">
+                                        Password is required
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+                                <mat-form-field appearance="outline" style="width: 100%;">
+                                    <mat-label>Confirm password</mat-label>
+                                    <mat-icon matPrefix>password</mat-icon>
+                                    <input matInput type="password" [formControl]="$any(userForm.get('confirmpassword')) ? $any(userForm.get('confirmpassword')) : null" [(ngModel)]="confirmpassword" placeholder="Confirm password" name="confirmpassword">
+
+                                    <mat-error *ngIf="userForm.get('confirmpassword')?.hasError('required') && userForm.get('confirmpassword')?.touched ">
+                                        Confirm password is required
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="pt-1 mb-4 ">
+                                <button class="btn btn-dark btn-lg btn-block" type="button" (click) = 'SaveUserData()'>Register</button>
+                                <button class="btn btn-dark btn-lg btn-block " style="margin-left:1%" type="button" [routerLink]="['']">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                  <!-- </form> -->
+                </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</section>

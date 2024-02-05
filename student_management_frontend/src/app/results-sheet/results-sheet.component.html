@@ -1,0 +1,25 @@
+<div class="container mt-3">
+    <button class="btn btn-primary" style="float: inline-end;" (click)="addPage()">ADD</button>
+    <h2 class="mt-2">Results List</h2>
+    <div class="card mt-2" *ngFor="let data of resultData">
+        <div class="card-body">
+            <p><small >Student:&nbsp;</small>{{data['student__first_name'] | titlecase}} {{data['student__last_name'] | titlecase}}</p>
+            <p><small>Staff:&nbsp;</small>{{data['student__first_name'] | titlecase}} {{data['student__last_name'] | titlecase}}</p>
+            <p><small>Created Date :&nbsp;</small>{{data['dat_created'] | date}}</p>
+            <table class="table table-hover" style="margin: 0;">
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let grade of data['json_grade'] | keyvalue">
+                        <td>{{grade.value.subject.vchr_name | titlecase}}</td>
+                        <td>{{grade.value.grade}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

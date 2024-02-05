@@ -1,0 +1,38 @@
+<div class="container mt-3">
+    <h2 class="mt-2">Add Results</h2>
+    <div class="card mt-2">
+      <div class="card-body">
+        <div class="form-outline mb-4 col-12 mt-2">
+            <mat-form-field  appearance="outline" style="width: 100%;">
+                <mat-label>Select Student</mat-label>
+                <mat-select matNativeControl id="mySelectId" (selectionChange)="selectStudent($event)">
+                  <mat-option value="" disabled selected></mat-option>
+                  <mat-option value="{{student['id']}}" *ngFor = "let student of students">{{student['fk_user__first_name'] | titlecase}} {{student['fk_user__last_name'] | titlecase}} : {{student['email']}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <table class="table table-hover" style="margin: 0;" *ngIf="showTable">
+            <thead>
+              <tr>
+                <th>Subjects</th>
+                <th>Grades</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let subject of subjects">
+                <td>{{subject['vchr_name'] | titlecase}}</td>
+                <td>
+                    <mat-select matNativeControl id="mySelectId" (selectionChange)="AddGrade(subject, $event)">
+                        <mat-option value="" disabled selected></mat-option>
+                        <mat-option value="{{garde}}" *ngFor = "let garde of grades">{{garde}}</mat-option>
+                    </mat-select>
+                </td>
+                
+              </tr>
+            </tbody>
+          </table>
+          <button *ngIf="showTable" class="btn btn-primary" style="float: inline-end;" (click)="AddResults()">ADD</button>
+          <!-- <small *ngIf="showTable">Note : If the grades are not it will be automatically considered failed and the grade will be F</small> -->
+      </div>
+    </div>
+</div>
