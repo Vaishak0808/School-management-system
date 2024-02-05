@@ -1,0 +1,22 @@
+2024-02-04 10:33:35,666 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 69 - views - post - ERROR - duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(vaishakchirakkal25@gmail.com) already exists.
+ - user_id:None - line no: 48
+2024-02-04 10:33:35,666 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 69 - views - post - ERROR - duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(vaishakchirakkal25@gmail.com) already exists.
+ - user_id:None - line no: 48
+2024-02-04 10:36:39,161 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 71 - views - post - ERROR - Email Already exist. - user_id:None - line no: 48
+2024-02-04 10:36:39,161 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 71 - views - post - ERROR - Email Already exist. - user_id:None - line no: 48
+2024-02-04 10:36:56,595 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 71 - views - post - ERROR - Email Already exist. - user_id:None - line no: 48
+2024-02-04 10:36:56,595 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 71 - views - post - ERROR - Email Already exist. - user_id:None - line no: 48
+2024-02-04 10:50:50,183 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - 'str_username' - user_id:None - line no: 79
+2024-02-04 10:50:50,183 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - 'str_username' - user_id:None - line no: 79
+2024-02-04 10:51:18,605 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - local variable 'token' referenced before assignment - user_id:None - line no: 91
+2024-02-04 10:51:18,605 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - local variable 'token' referenced before assignment - user_id:None - line no: 91
+2024-02-04 10:51:59,147 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91
+2024-02-04 10:51:59,147 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91
+2024-02-04 10:52:03,569 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - Expecting value: line 1 column 1 (char 0) - user_id:4 - line no: 86
+2024-02-04 10:52:03,569 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - Expecting value: line 1 column 1 (char 0) - user_id:4 - line no: 86
+2024-02-04 13:02:08,857 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91
+2024-02-04 13:02:08,857 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91
+2024-02-04 13:02:14,366 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91
+2024-02-04 13:02:14,366 - /home/vaishak/Documents/TIMES_WORLD/student_management/userdetails/views.py - 93 - views - post - ERROR - User does not exist - user_id:None - line no: 91

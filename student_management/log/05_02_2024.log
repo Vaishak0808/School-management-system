@@ -1,0 +1,32 @@
+2024-02-05 10:19:22,953 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 114 - views - post - ERROR - User does not exist - user_id:None - line no: 112
+2024-02-05 10:19:22,953 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 114 - views - post - ERROR - User does not exist - user_id:None - line no: 112
+2024-02-05 14:59:01,910 - /home/varsha/Documents/vaishak/student_management/results/views.py - 95 - views - get - ERROR - Cannot resolve keyword 'vchr_name' into field. Choices are: date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, password, staff_id, student_id, user_details, user_permissions, username - user_id:7 - line no: 84
+2024-02-05 14:59:01,910 - /home/varsha/Documents/vaishak/student_management/results/views.py - 95 - views - get - ERROR - Cannot resolve keyword 'vchr_name' into field. Choices are: date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, password, staff_id, student_id, user_details, user_permissions, username - user_id:7 - line no: 84
+2024-02-05 15:18:32,457 - /home/varsha/Documents/vaishak/student_management/results/views.py - 112 - views - post - ERROR - duplicate key value violates unique constraint "results_staff_id_key"
+DETAIL:  Key (staff_id)=(7) already exists.
+ - user_id:7 - line no: 103
+2024-02-05 15:18:32,457 - /home/varsha/Documents/vaishak/student_management/results/views.py - 112 - views - post - ERROR - duplicate key value violates unique constraint "results_staff_id_key"
+DETAIL:  Key (staff_id)=(7) already exists.
+ - user_id:7 - line no: 103
+2024-02-05 15:18:49,608 - /home/varsha/Documents/vaishak/student_management/results/views.py - 112 - views - post - ERROR - duplicate key value violates unique constraint "results_staff_id_key"
+DETAIL:  Key (staff_id)=(7) already exists.
+ - user_id:7 - line no: 103
+2024-02-05 15:18:49,608 - /home/varsha/Documents/vaishak/student_management/results/views.py - 112 - views - post - ERROR - duplicate key value violates unique constraint "results_staff_id_key"
+DETAIL:  Key (staff_id)=(7) already exists.
+ - user_id:7 - line no: 103
+2024-02-05 15:53:37,863 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'role' - user_id:8 - line no: 111
+2024-02-05 15:53:37,863 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'role' - user_id:8 - line no: 111
+2024-02-05 15:53:49,575 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'role' - user_id:8 - line no: 111
+2024-02-05 15:53:49,575 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'role' - user_id:8 - line no: 111
+2024-02-05 15:54:59,850 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'fk_role' - user_id:8 - line no: 111
+2024-02-05 15:54:59,850 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'fk_role' - user_id:8 - line no: 111
+2024-02-05 15:55:02,766 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'fk_role' - user_id:8 - line no: 111
+2024-02-05 15:55:02,766 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - 'User' object has no attribute 'fk_role' - user_id:8 - line no: 111
+2024-02-05 15:57:36,446 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 15:57:36,446 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 15:57:43,919 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 15:57:43,919 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 15:57:52,422 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 15:57:52,422 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 16:02:45,068 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
+2024-02-05 16:02:45,068 - /home/varsha/Documents/vaishak/student_management/userdetails/views.py - 118 - views - post - ERROR - User does not exist - user_id:None - line no: 116
